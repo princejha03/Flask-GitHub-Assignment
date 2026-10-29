@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 500px;
+        margin: auto;
+        padding: 25px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px #00000015;
+      }
+      h1 {
+        text-align: center;
+        color: #263b5e;
+      }
+      label {
+        display: block;
+        margin-top: 18px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        margin-top: 7px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My To-Do List</h1>
+
+      <form action="/submittodoitem" method="POST">
+        <label for="itemName">Item Name</label>
+        <input
+          type="text"
+          id="itemName"
+          name="itemName"
+          placeholder="Enter item name"
+          required
+        />
+
+        <label for="itemDescription">Item Description</label>
+        <textarea
+          id="itemDescription"
+          name="itemDescription"
+          placeholder="Describe your task"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Add To-Do Item</button>
+      </form>
+    </div>
+  </body>
+</html>
