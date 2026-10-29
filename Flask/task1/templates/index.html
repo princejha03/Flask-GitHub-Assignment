@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flask API</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .card {
+        max-width: 600px;
+        margin: auto;
+        padding: 50px 40px;
+
+        background: white;
+        border-radius: 15px;
+
+        text-align: center;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 32px;
+      }
+
+      p {
+        color: #666;
+        font-size: 17px;
+        margin-bottom: 30px;
+      }
+
+      .api-button {
+        display: inline-block;
+
+        padding: 12px 25px;
+
+        background: #667eea;
+        color: white;
+
+        text-decoration: none;
+
+        border-radius: 8px;
+
+        font-size: 16px;
+
+        transition: 0.3s;
+      }
+
+      .api-button:hover {
+        background: #4f63c7;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Welcome to My Flask API</h1>
+
+        <p>This is the home page of my Flask API application.</p>
+
+        <a href="/api" class="api-button"> View API Data </a>
+      </div>
+    </div>
+  </body>
+</html>
